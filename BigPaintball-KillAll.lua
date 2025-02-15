@@ -1,11 +1,8 @@
-local Keybind = "F"
-
 local SessionID = string.gsub(tostring(math.random()):sub(3), "%d", function(c)
     return string.char(96 + math.random(1, 26))
 end)
-print('✅ | Running BigPaintball2.lua made by Astro with keybind ' .. Keybind .. '! [SessionID ' .. SessionID .. ']')
 
-local Enabled = false
+local Enabled = True
 local UserInputService = game:GetService("UserInputService")
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
@@ -61,9 +58,9 @@ UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
     if input.KeyCode == Enum.KeyCode[Keybind] and not gameProcessedEvent then
         Enabled = not Enabled
         if Enabled then
-            print('✅ | Enabled BigPaintball2.lua [SessionID ' .. SessionID .. ']')
+            print('✅ | Enabled BigPaintball-KillAll.lua [SessionID ' .. SessionID .. ']')
         else
-            print('❌ | Disabled BigPaintball2.lua [SessionID ' .. SessionID .. ']')
+            print('❌ | Disabled BigPaintball-KillAll.lua [SessionID ' .. SessionID .. ']')
         end
     end
 end)
