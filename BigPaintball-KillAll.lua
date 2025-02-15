@@ -53,18 +53,6 @@ local function teleportEntities(cframe, team)
     end
 end
 
--- Eingabeerkennung für das Umschalten
-UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
-    if input.KeyCode == Enum.KeyCode[Keybind] and not gameProcessedEvent then
-        Enabled = not Enabled
-        if Enabled then
-            print('✅ | Enabled BigPaintball-KillAll.lua [SessionID ' .. SessionID .. ']')
-        else
-            print('❌ | Disabled BigPaintball-KillAll.lua [SessionID ' .. SessionID .. ']')
-        end
-    end
-end)
-
 -- Hauptschleife
 while wait(0.1) do -- Optimierte Aktualisierungsrate
     safeExecute(function()
