@@ -22,7 +22,7 @@ local function flickCameraSequence()
 end
  
 UIS.InputBegan:Connect(function(input, processed)
-    if not processed and input.KeyCode == Enum.KeyCode.E then
+    if not processed and input.KeyCode == Enum.KeyCode.Q then
         flickCameraSequence()
     end
 end)
