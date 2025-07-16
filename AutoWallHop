@@ -1,4 +1,4 @@
-setclipboard("discord.gg/robloxexploit")
+setclipboard("https://discord.gg/f5YWtcMGhX")
 local UIS = game:GetService("UserInputService")
  
 local function flickCamera90Degrees()
