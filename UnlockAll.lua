@@ -1,3 +1,4 @@
+setclipboard("https://discord.gg/f5YWtcMGhX")
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local HttpService = game:GetService("HttpService")
